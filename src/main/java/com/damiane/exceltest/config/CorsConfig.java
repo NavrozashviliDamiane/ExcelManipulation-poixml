@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000", "https://your-react-app-domain.com") // Allow both local and deployed frontend
+                        .allowedOrigins("http://localhost:3000", "https://your-react-app-domain.com", "https://damiane-excel-test.netlify.app") // Allow both local and deployed frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true)  // Allows cookies, authorization headers, etc.
