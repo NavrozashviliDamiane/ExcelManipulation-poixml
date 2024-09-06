@@ -1,8 +1,4 @@
 spring:
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      database: exceltestpoi
-
-
+      uri: mongodb://mongo:MrtdPspevTWtdmGDTRVJJlTCQyWMXklV@mongodb.railway.internal:27017/testexcel?authSource=admin
