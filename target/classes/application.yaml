@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo:MrtdPspevTWtdmGDTRVJJlTCQyWMXklV@mongodb.railway.internal:27017/testexcel?authSource=admin
