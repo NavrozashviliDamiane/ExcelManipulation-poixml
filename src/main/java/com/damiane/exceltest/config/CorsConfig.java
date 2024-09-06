@@ -14,11 +14,11 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("*")
+                        .allowedOrigins("http://localhost:3000", "https://your-react-app-domain.com") // Allow both local and deployed frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                         .allowedHeaders("*")
-                        .allowCredentials(true)
-                        .maxAge(3600);
+                        .allowCredentials(true)  // Allows cookies, authorization headers, etc.
+                        .maxAge(3600);  // Cache CORS response for 1 hour
             }
         };
     }
